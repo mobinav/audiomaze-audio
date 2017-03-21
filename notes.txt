@@ -1,0 +1,77 @@
+
+
+	LSL Maze notes
+3/17
+JRI
+
+Fixed up mapping of control room speakers: Use AUDIO_MAZE_2017 for mixer patch now
+Did a lot of cleanup of max patches
+
+creating a git repository called audiomaze-audio, under project account 'mobinav' the password
+is BerlinSanDiego1
+
+This will supersede the current versions in the audiomaze repo. It's simpler this way, I think, than
+having to remember to copy files from mac to presenting.
+
+Installed: git 1.8.4.2 and firefox to make this work
+
+Looking for source for lslreceive and lslsendevent max patches!?
+---------------------------------------------------------------------------------------------
+2/21/17
+JRI
+
+/Users/mobi/Desktop/AudioMaze
+
+Will start using full-body phasespace Mocap
+Feet
+Hips
+Right glove
+Hat (4 top sensors, 3 head orientation)
+
+phasespace preset: "AudioMaze Suit"
+
+re-enable LSL events from max
+---------------------------------------------------------------------------------------------
+3/17/2016 
+DEM
+
+To start the audio portion of the maze.
+
+Run 'LSLMazewpoly-devel.maxpat'. Follow the instructions to turn the audio on.  
+
+Make sure that the preset ~/Desktop/Presets/AUDIO_MAZE_2016 is loaded in the HDSP Matrix.
+
+Enjoy.
+---------------------------------------------------------------------------------------------
+4/21/15
+MOBI phasespace now uses "4 gloves, 2 heads"
+---------------------------------------------------------------------------------------------
+1/14/14
+JRI/MM
+Did Pilot with Makoto, seem to have worked out all the bugs
+Note, the vr plotting seems to do something critical to the maze calculation, which should be fixed
+Consider special sound at wall end, wall penetration and edge of world.
+Shrink the maze away from room edges
+Improve handling of two hands, and when markers drop out.
+
+STARTUP
+
+MoBI_DEMOS/MAZE_LSL
+
+Open HDSPe Mixer, load AUDIO_MAZE_2014 mixer preset
+Open lslreceiver.maxpat
+Open LSLMazewpoly.maxpat
+
+On presenting, open matlab, execute Run_AudioMaze.m  in E:\Demo\AudioMazeLSL
+
+On MOBI, use "Full Body 1 w/DG (48)"
+---------------------------------------------------------------------------------------------
+12/19/13
+JRI/MM
+Converting maze patches to use lslaudio (using esther's experiment as a model)
+
+master version is on hoarding/mobi/audiomaze/MAX
+
+MAX patches live at hoarding/mobi//audiomaze/dev/MAX/lslsendevent and /Volumes/mobi/audiomaze/dev/MAX/lslreceive
+
+
